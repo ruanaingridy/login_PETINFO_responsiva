@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script src="index.js"> </script>
+    <title>PETINFO</title>
+</head>
+<body>
+    <header>
+        <div><a href="index.html" id="header_title">MY PET INFO</a></div>
+        <div id="social_media">
+            <span><a href="https://pt-br.facebook.com/" target="_blank" class="links">FACEBOOK</a></span>
+            <span><a href="https://twitter.com/login?lang=pt" target="_blank" class="links">TWITTER</a></span>
+            <span><a href="https://www.instagram.com/" target="_blank" class="links">INSTAGRAM</a></span>
+        </div>
+    </header>
+
+    <main>
+        <div class="square_1">
+            <div id="main_img">
+                <img src="./IMAGENS/principal.jpg">
+            </div>
+        </div>
+        <div class="square_2">
+            <h2 id="form_title">ENTRAR</h2>
+            <form>
+                <p>LOGIN</p>
+                <input type="text" name="Login" value="exemplo@email.com" onfocus="this.value=''" class="input">
+                <p>SENHA</p>
+                <input type="password" name="Senha" value="********" onfocus="this.value=''" class="input">
+                <div id="forgot_pass" onclick=""><p class="forgot_pass_p">ESQUECI MINHA SENHA</p></div> 
+                <input type="submit" value="login" id="form_btn">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div id="social_media_footer">
+            <span><a href="https://pt-br.facebook.com/" target="_blank" class="links">FACEBOOK</a></span>
+            <span><a href="https://twitter.com/login?lang=pt" target="_blank" class="links">TWITTER</a></span>
+            <span><a href="https://www.instagram.com/" target="_blank" class="links">INSTAGRAM</a></span>
+        </div> 
+    </footer>   
+</body>
+</html>

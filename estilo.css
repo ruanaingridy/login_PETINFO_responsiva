@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: 'DM Sans', Helvetica, sans-serif;
+    color: #444444;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #FCBD60;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: flex-end;
+}
+
+header {
+    min-width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    margin: 0 0 30px 0;
+}
+#header_title {
+    font-size: 2.4em;
+    font-family: 'Russo One', Helvetica, sans-serif;
+    color: #444444;
+    text-decoration: none;
+}
+#social_media {
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.links {
+    size: 1em;
+    text-decoration: none;
+    color: #444444;
+}
+.links:hover {
+    font-weight: 900;
+    color: #EC7969;
+}
+
+main {
+    min-width: 80vw;
+    min-height: 65vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-end;
+}
+.square_1 {
+    min-width: 40vw;
+    min-height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: white;
+    opacity: 90%;
+    margin-left: 1px;
+}
+#main_img {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+img {
+    width: 100%;
+}
+.square_2 {
+    min-width: 40vw;
+    min-height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: white;
+    opacity: 90%;
+    margin-left: 1px;
+}
+#form_title {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Russo One', Helvetica, sans-serif;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 20px;
+}
+p {
+    font-size: 0.9em;
+    color: #8F8E8E;
+    margin-top: 5px;
+}
+.input {
+    background-color: #FCBD60;
+    opacity: 20%;
+    border-radius: 20px;
+    padding: 8px;
+    width: 25vw;
+    margin: 5px;
+    text-align: center;
+    color: black;
+}
+.input:hover {
+    background-color: #EC7969;
+    opacity: 20%;
+}
+#forgot_pass {
+    font-size: 0.8em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#forgot_pass:hover {
+    cursor: pointer;
+}
+.forgot_pass_p:hover {
+    color: #EC7969;
+}
+#form_btn {
+    text-align: center;
+    background-color: #EC7969;
+    border-radius: 20px;
+    padding: 6px;
+    width: 8vw;
+    margin: 5px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+#form_btn:hover {
+    cursor: pointer;
+    opacity: 70%;
+}
+footer {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    header {
+        flex-direction: column;
+        width: 100vw;
+    }   
+    #header_title, #social_media, .square_2 {
+    width: 70vw;
+    padding: 5px;
+    }
+    .square_1 {
+        display: none;
+    }
+    .input {
+        width: 35vw;
+    }
+    #form_btn {
+        width: 10vw;
+    }   
+}
+
+@media only screen and (max-width: 520px) {
+    body {
+        justify-content: center;
+        align-items: center;
+        align-content: space-around;
+    }
+    #header_title, #social_media, .square_2 {
+        width: 80vw;
+        padding: 5px;
+    }
+    #header_title {
+        font-size: 2em;
+    }
+    .square_2 {
+        align-content: space-around;
+        width: fit-content;
+    }
+    #form_title {
+        font-size: 1.1em;
+    }
+    #forgot_pass, p, .input, .links, #form_btn {
+        font-size: 0.5em;
+    }
+    #social_media {
+        display: none;
+    }
+    footer {
+        display: flex;
+    }
+    #social_media_footer {
+        width: 40vw;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+}
